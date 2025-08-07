@@ -22,7 +22,7 @@ pip install django-db-s3-backup
 #Add to your INSTALLED_APPS
 INSTALLED_APPS = [
     ...
-    'django_db_s3_backup',
+    'django_db_s3_backup.apps.DBS3BackupConfig',
     'django_apscheduler', 
     ...
 ]

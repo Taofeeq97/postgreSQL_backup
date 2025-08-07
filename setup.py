@@ -5,13 +5,13 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="django-db-s3-backup",
-    version="2.0.8",
+    version="0.1.2",
     author="Otu Taofeeq",
-    author_email="otutaofeeq@gmail.com",
+    author_email="otutaofeeqi@gmail.com",
     description="Django database backup with S3 storage and scheduling",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/django-db-s3-backup",
+    url="https://github.com/Taofeeq97/postgreSQL_backup.git",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
