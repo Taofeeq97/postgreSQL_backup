@@ -36,7 +36,6 @@ class Command(BaseCommand):
         )
 
     def handle(self, *args, **options):
-        # Configure logging level based on debug flag
         log_level = logging.DEBUG if options['debug'] else logging.INFO
         logging.basicConfig(level=log_level)
         

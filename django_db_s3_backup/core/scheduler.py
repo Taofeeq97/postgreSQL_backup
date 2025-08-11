@@ -1,3 +1,4 @@
+import uuid
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.cron import CronTrigger
 from django_apscheduler.jobstores import DjangoJobStore
@@ -37,7 +38,7 @@ def start_backup_scheduler():
             _run_scheduled_backup,
             args=[service],
             trigger=CronTrigger.from_crontab(backup_settings.schedule_config.cron),
-            id='db_backup',
+            id=f'db_backup_{uuid.uuid4().hex}',
             replace_existing=True
         )
 
